@@ -1,0 +1,1 @@
+package com.renault.garage.domain.events; public record VehicleCreatedEvent(String vehicleId, String garageId, String model, String brand) {}

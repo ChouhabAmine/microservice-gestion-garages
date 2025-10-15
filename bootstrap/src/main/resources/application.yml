@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+kafka:
+  bootstrap-servers: localhost:9092
+  topics:
+    vehicle-created: vehicle-created
+  group-id: garage-consumer

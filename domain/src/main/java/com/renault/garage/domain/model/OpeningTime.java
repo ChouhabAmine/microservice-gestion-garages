@@ -4,9 +4,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.AssertTrue;
 import java.time.LocalTime;
 
-/**
- * POJO OpeningTime avec validation (et règle métier endTime > startTime).
- */
+
 public class OpeningTime {
 
     @NotNull
@@ -22,7 +20,6 @@ public class OpeningTime {
         this.endTime = endTime;
     }
 
-    /** Règle métier validée par Bean Validation */
     @AssertTrue(message = "endTime must be after startTime")
     public boolean isRangeValid() {
         return startTime == null || endTime == null || endTime.isAfter(startTime);

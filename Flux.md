@@ -138,9 +138,6 @@ Avant de tester les endpoints liés aux véhicules, il est nécessaire de **cré
 
 ---
 
-### 🔟 Liste des véhicules par modèle
-**Endpoint :**  
-`GET http://localhost:8080/vehicles/search?model=Clio 5`
 
 Les endpoints de gestion des accessoires sont implémentés dans la classe AccessoryController.
 

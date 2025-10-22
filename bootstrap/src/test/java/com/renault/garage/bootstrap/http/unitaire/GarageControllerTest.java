@@ -1,7 +1,8 @@
-package com.renault.garage.bootstrap.http;
+package com.renault.garage.bootstrap.http.unitaire;
 
 import com.renault.garage.application.IGarageService;
 import com.renault.garage.application.service.GarageServiceImpl;
+import com.renault.garage.bootstrap.http.GarageController;
 import com.renault.garage.domain.model.Garage;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;

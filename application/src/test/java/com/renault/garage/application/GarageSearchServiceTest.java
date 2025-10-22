@@ -51,8 +51,8 @@ class GarageSearchServiceTest {
         Mockito.when(vehicleRepo.findByType(type)).thenReturn(Flux.just(v1, v2, v3, v4));
 
         // Garages g1 & g2
-        var g1 = new Garage("g1","Garage Renault Nord","Ain Sebaa","0600000000","amine@gmail.com" ,new HashMap<>(),new ArrayList<>());
-        var g2 = new Garage("g2","Garage Renault Sud","Sidi Maarouf","0610000000","amine@gmail.com" ,new HashMap<>(),new ArrayList<>());
+        var g1 = garage("g1","Garage Renault Nord");
+        var g2 = garage("g2","Garage Renault Sud");
 
         Mockito.when(garageRepository.findById("g1")).thenReturn(Mono.just(g1));
         Mockito.when(garageRepository.findById("g2")).thenReturn(Mono.just(g2));

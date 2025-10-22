@@ -1,4 +1,4 @@
-package com.renault.garage.bootstrap.http;
+package com.renault.garage.bootstrap.http.integration;
 
 import com.renault.garage.infrastructure.events.KafkaVehicleEventConsumer;
 import org.junit.jupiter.api.Test;
